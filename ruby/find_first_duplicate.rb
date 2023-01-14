@@ -1,5 +1,17 @@
 def find_first_duplicate(arr)
-  # type your code in here
+
+  unique = []
+
+  for each in arr do
+    if unique.include?(each)
+      return each
+    else
+      unique.push(each)
+    end
+  end
+
+  -1
+
 end
 
 if __FILE__ == $PROGRAM_NAME
